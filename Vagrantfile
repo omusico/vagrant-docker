@@ -13,6 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "pcompton/fedora-docker"
   config.ssh.username = "root"
   config.ssh.password = "issgov123"
+  config.vm.network "private_network", type: "dhcp"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
